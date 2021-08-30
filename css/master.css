@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,*:before,*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,:active {outline: none;}
+a:focus,a:active {outline: none;}
+
+nav,footer,header,aside {display: block;}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/*------------------------------------------*/
+html {
+    min-width: 1006px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+/*    background: url(../img/bg-repeat.jpg);*/
+background-color: black;
+    color: #a99877;
+    font: normal 13px/1.5 Arial, sans-serif;
+
+  }
+
+  .bg-wrapper {
+    background-image: url("../img/non-hover4.jpg");
+  background-position: 50% 0;
+      -webkit-background-size: auto;
+      background-repeat: no-repeat;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial;
+      background-color: initial;
+        overflow: hidden; /* edited!!! */
+  }
+
+/*
+  @media (max-width: 1024px){
+  .bg-wrapper {
+      background-image: url(../img/body-bg-1024px.jpg);}
+  }
+  @media (max-width: 1280px){
+  .bg-wrapper {
+      background-image: url(../img/body-bg-1280px.jpg);}
+  }
+  @media (max-width: 1440px){
+  .bg-wrapper {
+      background-image: url(../img/body-bg-1440px.jpg);}
+  }
+  @media (max-width: 1680px){
+  .bg-wrapper {
+      background-image: url(../img/body-bg-1680px.jpg);}
+  }
+  @media (max-width: 1920px){
+  .bg-wrapper {
+      background-image: url(../img/body-bg-1920px.jpg);}
+  }
+*/
+
+.wrapper {
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.head {
+    height: 279px;
+    position: relative;
+    z-index: 200;
+}
+
+.head .menu {
+    width: 650px;
+    height: 85px;
+    position: absolute;
+    bottom: 4px;
+    left: 12px;
+    background: url(../img/menu-bg.jpg);
+    background-repeat: no-repeat;
+}
+
+.head .discord {
+    width: 303px;
+    height: 85px;
+    position: absolute;
+    bottom: 4px;
+    left: 672px;
+    background: url(../img/menu-dc4.jpg?v=3) no-repeat;
+}
+
+.head .discord a{
+  display: block;
+  width: 303px;
+  height: 85px;
+  color: #a99877;
+  font: normal 14px "Diablo", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 1px 0 #000, 0 0 5px #000;
+}
+
+.head .discord a span {
+  display: block;
+  text-align: center;
+  width: 196px;
+  height: 85px;
+  padding-top: 30px;
+  padding-right: 0px;
+  padding-left: 19px;
+}
+
+.menu-rankings {
+  letter-spacing: 1px;
+}
+
+
+.head .menu li {
+        float: left;
+    }
+
+    .head .menu li, .head .menu li a {
+        display: block;
+        width: 130px;
+        height: 85px;
+        color: #a99877;
+        font: normal 12px "Diablo", sans-serif;
+        text-transform: uppercase;
+        text-shadow: 0 1px 0 #000, 0 0 5px #000;
+    }
+
+    .head .menu li a {
+      margin: 0;
+    }
+
+    .head .menu li.menu-home a.menu-active {
+        background-position: 0 -130px;
+    }
+
+    .head .menu li a span {
+    display: block;
+    text-align: center;
+    height: 85px;
+    padding-top: 67px;
+    padding-right: 0px;
+}
+
+/*---------------------------*/
+.head .menu li a:hover,
+.head .menu li a.menu-active { background: url("../img/menu-bg.jpg?v=3") no-repeat; }
+
+
+.head .menu li a:hover { color: white; }
+.head .menu li a.menu-active { color: #F3E6D0 !important; }
+.head .menu li.menu-home a:hover { background-position: 0 -85px; }
+.head .menu li.menu-rankings a:hover { background-position: -130px -85px; }
+.head .menu li.menu-media a:hover { background-position: -260px -85px; }
+.head .menu li.menu-forums a:hover { background-position: -390px -85px; }
+.head .menu li.menu-purchase a:hover { background-position: -520px -85px; }
+.head .menu li.menu-home a.menu-active { background-position: 0 -170px; }
+.head .menu li.menu-rankings a.menu-active { background-position: -104px -130px; }
+.head .menu a.menu-active, .head .menu li.menu-rankings a.menu-active { background-position: -130px -130px; }
+.head .menu li.menu-media a.menu-active { background-position: -312px -130px; }
+.head .menu li.menu-forums a.menu-active { background-position: -416px -130px; }
+.head .menu li.menu-purchase a.menu-active { background-position: -520px -130px; }
+
+/*------------------------------*/
+
+.head .discord a:hover {
+  background: url("../img/menu-dc4.jpg?v=3") no-repeat;
+}
+
+.head .discord a:hover:active {
+  background-position: 0 -170px;
+}
+
+.head .discord a:hover { background-position: 0 -85px ; color: white; }
+
+
+@font-face {
+  font-family: "Diablo";
+  src: url("../fonts/Diablo.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
