@@ -1,0 +1,206 @@
+
+.head_server {
+    display: flex;
+justify-content: center;
+margin-top: -150px;
+}
+
+.head_server .menu {
+    width: 650px;
+    height: 85px;
+    background: url(../img/menu-bg.jpg);
+    background-repeat: no-repeat;
+}
+
+
+.menu-rankings {
+  letter-spacing: 1px;
+}
+
+
+.head_server .menu li {
+        float: left;
+    }
+
+    .head_server .menu li, .head_server .menu li a {
+        display: block;
+        width: 130px;
+        height: 85px;
+        color: #a99877;
+        font: normal 12px "Diablo", sans-serif;
+        text-transform: uppercase;
+        text-shadow: 0 1px 0 #000, 0 0 5px #000;
+    }
+
+    .head_server .menu li a {
+      margin: 0;
+    }
+
+    .head_server .menu li.menu-home a.menu-active {
+        background-position: 0 -130px;
+    }
+
+    .head_server .menu li a span {
+    display: block;
+    text-align: center;
+    height: 85px;
+    padding-top: 67px;
+    padding-right: 0px;
+}
+
+/*---------------------------*/
+.head_server .menu li a:hover,
+.head_server .menu li a.menu-active { background: url("../img/menu-bg.jpg?v=3") no-repeat; }
+
+
+.head_server .menu li a:hover { color: white; }
+.head_server .menu li a.menu-active { color: #F3E6D0 !important; }
+.head_server .menu li.menu-home a:hover { background-position: 0 -85px; }
+.head_server .menu li.menu-rankings a:hover { background-position: -130px -85px; }
+.head_server .menu li.menu-media a:hover { background-position: -260px -85px; }
+.head_server .menu li.menu-forums a:hover { background-position: -390px -85px; }
+.head_server .menu li.menu-purchase a:hover { background-position: -520px -85px; }
+.head_server .menu li.menu-home a.menu-active { background-position: 0 -170px; }
+.head_server .menu li.menu-rankings a.menu-active { background-position: -104px -130px; }
+.head_server .menu a.menu-active, .head .menu li.menu-rankings a.menu-active { background-position: -130px -130px; }
+.head_server .menu li.menu-media a.menu-active { background-position: -312px -130px; }
+.head_server .menu li.menu-forums a.menu-active { background-position: -416px -130px; }
+.head_server .menu li.menu-purchase a.menu-active { background-position: -520px -130px; }
+
+/*------------------------------*/
+
+.news-container {
+    padding-top: 0px;
+}
+
+.news-container .news-wrapper {
+    background: url(../img/blog-separator-2.png) 50% 100% no-repeat;
+    position: relative;
+}
+
+.news-container .news-wrapper>a {
+    display: block;
+    min-height: 90px;
+    padding: 48px 114px 80px 355px;
+    position: relative;
+}
+
+.news-container .news-wrapper>a:hover .news-image {
+    border-color: #ba7600;
+    box-shadow: 0 0 60px rgb(97 55 1 / 100%);
+}
+
+.news-container .news-image {
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid #3f2f29;
+    box-shadow: 0 0 60px transparent;
+    height: 130px;
+    left: 64px;
+    position: absolute;
+    top: 48px;
+    transition: box-shadow 0.2s, border 0.2s;
+    width: 260px;
+}
+
+.news-container .header-2 {
+    color: #f3e6d0;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    line-height: 26px;
+    margin: 0;
+    transition: color 0.2s;
+}
+
+
+.news-container .news-text {
+    color: #a99877;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 12px;
+    transition: color 0.2s;
+}
+
+.news-container .article-meta {
+    bottom: 20px;
+    color: #6d624c;
+    font-size: 14px;
+    left: 356px;
+    line-height: 26px;
+    position: absolute;
+}
+
+
+.novosti {
+  text-align: center;
+  font: normal 40px "Diablo", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.news-container .load-more-container {
+    padding: 48px 0 24px;
+    text-align: center;
+}
+
+.news-container .load-more {
+    background-image: linear-gradient(to bottom, #6b3500, #ff8308);
+    color: #f5de9f;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Exocet Reaper", "Palatino Linotype", "Times", serif;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 12px 36px;
+    position: relative;
+    transition: background 0.2s, color 0.2s;
+    text-transform: uppercase;
+}
+.news-container .load-more:hover {
+    color: #fef3d4;
+}
+
+/*---------------------------------------------*/
+
+.body-top .server-menu{
+    width: 990px;
+    height: 35px;
+    position: absolute;
+    top: -18px;
+    left: 0px;
+}
+
+.body-top .server-menu li {
+    float: left;
+}
+
+.body-top .server-menu li, .body-top .server-menu li a {
+    display: block;
+    width: 196px;
+    height: 55px;
+    color: #a99877;
+    font: normal 16px "Diablo", sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 #000, 0 0 5px #000;
+}
+
+.server-menu li a:hover {
+  color: white;
+  text-shadow: 0 0 30px rgb(235 252 249 / 100%);
+}
+
+.body-top .server-menu li a span {
+    display: block;
+    text-align: center;
+    height: 35px;
+    padding-top: 18px;
+    padding-right: 0px;
+}
+
+@font-face {
+  font-family: "Diablo";
+  src: url("../fonts/Diablo.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
