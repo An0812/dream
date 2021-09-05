@@ -1,45 +1,5 @@
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-*,*:before,*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-:focus,:active {outline: none;}
-a:focus,a:active {outline: none;}
-
-nav,footer,header,aside {display: block;}
-
-html, body{
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-input,button,textarea{font-family:inherit;}
-
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-
-/*------------------------------------------*/
 html {
-    min-width: 1006px;
+    min-width: 1056px;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
@@ -205,10 +165,91 @@ background-color: black;
 
 .head .discord a:hover { background-position: 0 -85px ; color: white; }
 
+/* * {
+  outline:1px solid red;
+} */
+.body {
+    background: rgba(24, 17, 7, 1); url(../images/layout/content-bg.jpg) 0 0 repeat;
+    margin: 76px 0 42px;
+    position: relative;
+
+    /*overflow: hidden; /*edited*/
+}
+
+.body-top {
+    background: url(../img/content-top2.jpg) 0 0 no-repeat;
+    padding-top: 20px;
+}
+
+.body-bot {
+    background: url(../img/content-bot-bg.jpg) no-repeat 0 100%;
+    min-height: 500px;
+    padding-bottom: 242px;
+    padding-left: 0px;
+    padding-top: 50px;
+    position: relative;
+}
+
+
+.body::before {
+    background: url(../img/content-glow-sides2.png);
+    bottom: 0px;
+    content: "";
+    left: -196px;
+    pointer-events: none;
+    position: absolute;
+    top: 66px;
+    width: 200px;
+    z-index: 100;
+}
+
+.body::after {
+    background: url(../img/content-glow-sides3.png) 100% 0;
+    bottom: 0px;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    right: -195px;
+    top: 66px;
+    width: 200px;
+    z-index: 100;
+}
+
+.body-top::before {
+    background: url(../img/content-glow-top2.png);
+    content: "";
+    height: 261px;
+    left: 50%;
+    margin-left: -693px;
+    pointer-events: none;
+    position: absolute;
+    top: -195px;
+    width: 1386px;
+    z-index: 150;
+}
+
+.body-bot::after {
+    background: url(../img/content-glow-bottom.png);
+    bottom: -200px;
+    content: "";
+    height: 261px;
+    left: 50%;
+    margin-left: -693px;
+    pointer-events: none;
+    position: absolute;
+    width: 1386px;
+    z-index: 150;
+}
+
 
 @font-face {
   font-family: "Diablo";
   src: url("../fonts/Diablo.ttf");
   font-style: normal;
   font-weight: normal;
+}
+
+@font-face {
+  font-family: "Exocet Reaper";
+  src: url("../fonts/Exocet Reaper.ttf");
 }

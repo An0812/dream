@@ -1,0 +1,44 @@
+.content-wrapper {
+  display: flex;
+  min-width: 100%;
+  background-color: darkgreen1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-row {
+  margin-top: 50px;
+  display: flex;
+  width: 800px;
+  flex: 0 0 auto;
+  background-color: darkblue1;
+  border: 1px solid red1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-row:last-child {
+  padding-bottom: 150px;
+}
+
+.content-image {
+  flex: 0 0 auto;
+  background: url(../img/kartinka.jpg);
+  background-size: contain;
+  width: 320px;
+  height: 180px;
+  border: 1px solid red1;
+}
+
+.content-text {
+  display: flex;
+
+flex: 0 0 auto;
+width: 400px;
+border: 1px solid red1;
+}
+
+.content-text p{
+ text-align: center;
+         font: normal 24px "Diablo", sans-serif;
+}
