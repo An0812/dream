@@ -6,7 +6,9 @@
         <link rel="stylesheet" href="../css/master.css">
         <link rel="stylesheet" href="../css/nullstyle.css">
         <link rel="stylesheet" href="../css/server.css">
+        <link rel="stylesheet" href="../css/pvp.css">
         <script src="../js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="../js/js.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 
@@ -65,18 +67,18 @@ return false;
          <div class="body">
            <div class="body-top">
              <div class="body-bot">
-               <div class="server-menu">
-                 <ul>
-                   <li><a href="./server.html"><span>Новости</span></a></li>
-                   <li><a href="./ladder.html"><span>Ладдер</span></a></li>
-                   <li><a href="./connect.html"><span>Подключиться</span></a></li>
-                   <li><a href="./pvp.html"><span>ПвП</span></a></li>
-                   <li><a href="./about.html"><span>О сервере</span></a></li>
+               <div class="server-menu" id="server-menu">
+                 <ul id="server-nav">
+                   <li><a href="server.html"><span>Новости</span></a></li>
+                   <li><a href="ladder.html"><span>Ладдер</span></a></li>
+                   <li><a href="connect.html"><span>Подключиться</span></a></li>
+                   <li><a href="pvp.html"><span>ПвП</span></a></li>
+                   <li><a href="about.html"><span>О сервере</span></a></li>
                  </ul>
 
                </div>
-                 <h1 class="novosti">Новости</h1>
-                 <div class="news-container">
+                 <div class="news-container" id="news-container">
+                   <h1 class="novosti">Новости</h1>
                    <div class="news-articles">
                      <div class="news-wrapper">
                        <a href="#">
