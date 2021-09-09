@@ -12,16 +12,16 @@ $(document).ready(function() {
 	$('#server-nav li a').click(function(){
 
 		var toLoad = $(this).attr('href')+' #news-container';
-		$('#news-container').hide('fast',loadContent);
+		$('#news-container').hide(0,loadContent);
 		$('#load').remove();
-		$('#server-menu').append('<span id="load">LOADING...</span>');
+		//$('#server-menu').append('<span id="load">LOADING...</span>');
 		$('#load').fadeIn('normal');
 		window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-5);
 		function loadContent() {
 			$('#news-container').load(toLoad,'',showNewContent())
 		}
 		function showNewContent() {
-			$('#news-container').show('normal',hideLoader());
+			$('#news-container').show(0,hideLoader());
 		}
 		function hideLoader() {
 			$('#load').fadeOut('normal');
